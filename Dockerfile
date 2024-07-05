@@ -1,4 +1,8 @@
 FROM python:3.8-slim-bookworm
+RUN apt-get update \
+    && apt-get install -y git \
+    && rm -rf /var/lib/apt/lists/*
+
 
 # Create a user and a group
 RUN groupadd -r exporter && useradd -r -g exporter exporter -u 999
