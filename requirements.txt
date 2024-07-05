@@ -1,3 +1,3 @@
-rq @ git+https://github.com/talismanai/rq@talisman
+rq @ git+https://github.com/talismanai/rq@v1.16.2-talisman
 redis>=3.5.3
 prometheus_client>=0.8.0
